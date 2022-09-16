@@ -241,6 +241,8 @@ body {
 }
 .icon {
   display: flex;
+  justify-content:center;
+align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
   width: 270px;
