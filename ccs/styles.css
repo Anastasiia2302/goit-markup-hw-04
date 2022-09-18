@@ -91,20 +91,29 @@ body {
 .link-contact {
   display: flex;
   align-items: center;
+  color:var(--second-color-text);
+  fill:var(--second-color-text);
 }
-.link:hover,
-.btn:hover {
+.link:hover
+ {
   color: var(--also-text-color);
+  
 }
-.link:focus,
-.btn:focus {
-  color: var(--also-text-color);
+.link:focus
+ {
+  color:var(--also-text-color);
+ 
 }
+.btn:focus {color: var(--text-color);}
+.btn:hover {color: var(--text-color);}
 .link-contact:hover,
 .envelope:hover {
   fill: var(--also-text-color);
   color: var(--also-text-color);
 }
+.link-contact:focus,
+.envelope:focus { fill: var(--also-text-color);
+  color: var(--also-text-color);}
 
 .cont-link:not(:first-child) {
   margin-left: 50px;
@@ -112,10 +121,10 @@ body {
 .smartphone:focus,
 .envelope:focus {
   fill: var(--second-color-text);
-  margin-right: 10px;
 }
 .smartphone {
   margin-right: 10px;
+  
 }
 .envelope {
   margin-right: 10px;
@@ -123,6 +132,7 @@ body {
 .link-contact {
   display: flex;
   display: block;
+  align-items: baseline;
   padding: 32px 0;
   color: var(--second-color-text);
   font-weight: 500;
@@ -134,6 +144,7 @@ body {
 .nav-item .link.current {
   color: var(--also-text-color);
 }
+
 /* Hero */
 
 .hero-section {
@@ -149,7 +160,7 @@ body {
     ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover
 }
 
 .hero-title {
@@ -271,7 +282,7 @@ body {
   margin-right: 0;
 }
 
-/* section-staff */
+/* Наша команда */
 
 .section-staff {
   padding-top: 94px;
@@ -348,9 +359,6 @@ body {
 .list-social:hover {
   background-color: var(--also-text-color);
 }
-.list-social:focus {
-  background-color: var(--also-text-color);
-}
 .social {
   fill: #afb1b8;
   display: flex;
@@ -362,11 +370,12 @@ body {
 .social:hover {
   fill: var(--second-background-color);
 }
-.social:focus {
-  fill: var(--second-background-color);
+.social:focus {fill:var(--text-color);
+  background-color: var(--also-text-color);
+  border-radius: 50%;
 }
-.social-link {
-}
+
+
 /* client */
 .section-clients {
   padding-top: 94px;
@@ -377,14 +386,14 @@ body {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 .flex-client {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+ 
 }
 .list-client {
   display: flex;
@@ -488,7 +497,8 @@ body {
   flex-wrap: wrap;
 }
 .link-image {
-  display: flex;
+  display: block;
+  text-decoration: none;
 }
 .li-image {
   display: flex;
@@ -508,23 +518,20 @@ body {
   padding: 0;
   height: 294px;
 }
-.link-port:hover,
-.container-text:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.link-image:focus {
+  border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.link-port:focus,
-.container-text:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.container-text {
-  cursor: pointer;
+.link-image:hover {
+  border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .container-text {
   padding: 20px 24px;
+  
 }
 .portfolio-list {
+  color:var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -602,8 +609,13 @@ body {
 .link-map:hover {
   color: var(--also-text-color);
 }
+.link-footer:focus,
+.link-mail:focus,
+.link-map:focus {
+  color: var(--also-text-color);}
 .foot {
   display: flex;
+  align-items: baseline;
 }
 .social-title {
   font-size: 14px;
@@ -612,7 +624,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-top: 12px;
 }
 .flex-icon-social {
   display: flex;
@@ -635,6 +646,10 @@ body {
   border-radius: 50%;
 }
 .social-footer:hover {
+  background-color: var(--also-text-color);
+  border-radius: 50px;
+}
+.social-footer:focus {
   background-color: var(--also-text-color);
   border-radius: 50px;
 }
